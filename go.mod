@@ -5,7 +5,7 @@ go 1.23.5
 require (
 	code.cloudfoundry.org/bytefmt v0.0.0-20240604172014-5a751eb643b0
 	github.com/BurntSushi/toml v1.4.0
-	github.com/agnivade/levenshtein v1.1.1
+	github.com/agnivade/levenshtein v1.2.1
 	github.com/alexmullins/zip v0.0.0-20180717182244-4affb64b04d0
 	github.com/antlr4-go/antlr/v4 v4.13.1
 	github.com/aws/aws-sdk-go-v2 v1.30.3
