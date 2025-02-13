@@ -21,7 +21,7 @@ require (
 	github.com/hashicorp/go-getter v1.7.5
 	github.com/hashicorp/hcl v1.0.0
 	github.com/hashicorp/hcl/v2 v2.20.1
-	github.com/hashicorp/terraform-json v0.22.1
+	github.com/hashicorp/terraform-json v0.24.0
 	github.com/johnfercher/maroto v1.0.0
 	github.com/mackerelio/go-osstat v0.2.5
 	github.com/moby/buildkit v0.19.0
@@ -38,7 +38,7 @@ require (
 	github.com/tidwall/gjson v1.17.1
 	github.com/xeipuuv/gojsonschema v1.2.0
 	github.com/yargevad/filepathx v1.0.0
-	github.com/zclconf/go-cty v1.14.4
+	github.com/zclconf/go-cty v1.15.1
 	golang.org/x/net v0.34.0
 	golang.org/x/text v0.21.0
 	golang.org/x/tools v0.26.0
