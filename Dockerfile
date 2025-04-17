@@ -29,7 +29,7 @@ RUN GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build \
 # Runtime image
 # Ignore no User Cmd since KICS container is stopped afer scan
 # kics-scan ignore-line
-FROM checkmarx/git:2.47.0-r0@sha256:b80cefbc536108e0e8e4305f01fd76445533133f3e2d1fedc4cb64754e915a14
+FROM checkmarx/git:2.47.0-r0@sha256:a96184f2d1691c284d1d583f6815e017edf0ff338ae68983a4506b0de25a0469
 
 ENV TERM xterm-256color
 
