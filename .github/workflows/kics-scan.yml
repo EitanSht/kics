@@ -1,0 +1,28 @@
+name: KICS scan with SARIF
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  kics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Create results directory
+        run: mkdir -p results-dir
+
+      - name: Run KICS scan and generate SARIF
+        uses: checkmarx/kics-github-action@latest
+        with:
+          path: 'terraform'        # change to the IaC directory root you want to scan
+          output_path: results-dir # when a directory is provided, KICS writes results.sarif inside it
+
+      - name: Upload SARIF to GitHub code scanning
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results-dir/results.sarif
